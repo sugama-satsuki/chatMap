@@ -29,6 +29,25 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger-cx/bootstrap.js?v=1"></script>
+    <style>
+      df-messenger {
+      --df-messenger-bot-message: #c3c1be;
+      --df-messenger-button-titlebar-color: #f08c00;
+      --df-messenger-chat-background-color: #EDEDF3;
+      --df-messenger-font-color: #fff;
+      --df-messenger-send-icon: #F29717;
+      --df-messenger-user-message: #f2b157;
+      }
+    </style>
+    <df-messenger
+        df-cx="true"
+        location="asia-northeast1"
+        chat-title="GeoloniaHiguchiDev1"
+        agent-id="466a0256-11fa-4376-b0c9-23c5c60b7814"
+        language-code="ja"
+    ></df-messenger>
+    
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.

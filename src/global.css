@@ -1,0 +1,51 @@
+:root {
+
+    /* ------ color ------ */
+    /* gray scale */
+    --color-neutral-0: #fff;
+    --color-neutral-1: #f8f9fa;
+    --color-neutral-2: #f1f3f5;
+    --color-neutral-3: #e9ecef;
+    --color-neutral-4: #dee2e6;
+    --color-neutral-5: #ced4da;
+    --color-neutral-6: #adb5bd;
+    --color-neutral-7: #33373a;
+    --color-neutral-8: #101213;
+
+    /* orange */
+    --color-orange-lightest: #fef0e6;
+    --color-orange-lighter: #f2b157;
+    --color-orange:#EE7310;
+    --color-orange-dark:#ce9750;
+
+    /* indigo */
+    --color-indigo-lightest: #EDEDF3;
+    --color-indigo-lighter: #b3c1f7;
+
+
+    /* ------ font size ------ */
+
+
+    /* ------ space ------ */
+    --space-xs: 4px;
+    --space-s: 8px;
+    --space-m: 16px;
+    --space-l: 24px;
+    --space-xl: 32px;
+
+
+    /* ------ height ------ */
+    --header-height: 56px;
+
+
+    /* ------ width ------ */
+    --sideMenu-width: 200px;
+
+
+    /* ------ border radius ------ */
+    --border-radius-s: 4px;
+    --border-radius-m: 8px;
+    --border-radius-rounded: 100px;
+    --border-radius-circle: 100%;
+
+}

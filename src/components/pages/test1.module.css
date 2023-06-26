@@ -1,0 +1,138 @@
+
+.page_wrapper {
+    width: calc(100% - var(--sideMenu-width));
+    height: calc(100vh - var(--header-height));
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    top: var(--header-height);
+    left: var(--sideMenu-width);
+    /* background-color: var(--color-neutral-1); */
+}
+
+.page_inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.geo_area {
+    background-color: var(--color-neutral-0);
+    border-radius: var(--border-radius-m) var(--border-radius-m) 0 0;
+    position: absolute;
+    width: calc(100% - var(--space-m)*2);
+    height: calc(100% - var(--space-m));
+    box-sizing: border-box;
+    margin: var(--space-m) var(--space-m) 0 var(--space-m);
+    padding: var(--space-s) var(--space-s) 0 var(--space-s);
+}
+.geo_area > img {
+    border-radius: var(--border-radius-m);
+    
+}
+
+
+
+/* ーーーーーーーーーーーー */
+/* チャットエリア */
+.chat_area {
+    height: calc(100% - var(--space-m));
+    width: calc(380px - var(--space-m));
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: var(--color-neutral-6);
+    border-radius: var(--border-radius-m) 0 0 0;
+    border-top: solid var(--color-neutral-0) 1px;
+    border-left: solid var(--color-neutral-0) 1px;
+}
+.chat_area > .chat_area_inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* チャットエリア：入力欄 */
+.chat_area > .chat_area_inner > .input_area {
+    position: absolute;
+    left: 0;
+    bottom: var(--space-m);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+}
+.chat_area > .chat_area_inner > .input_area > input {
+    background-color: var(--color-neutral-5);
+    padding: var(--space-s);
+    border-radius: var(--border-radius-s);
+    color: var(--color-neutral-0);
+    border: none;
+    font-size:14px;
+    line-height: 1;
+    width: 80%;
+}
+.chat_area > .chat_area_inner > .input_area > .searchBtn {
+    background-color: var(--color-neutral-5);
+    padding: var(--space-s) var(--space-m);
+    border-radius: var(--border-radius-s);
+    color: var(--color-neutral-0);
+    border: none;
+}
+.chat_area > .chat_area_inner > .input_area > .cleanBtn {
+    background-color: var(--color-orange);
+    height: calc(14px + (var(--space-s) * 2));
+    width: calc(14px + (var(--space-s) * 2));
+    padding: var(--space-s);
+    border-radius: var(--border-radius-circle);
+    color: var(--color-neutral-0);
+    border: none;
+    margin-right: var(--space-s);
+}
+
+/* チャットエリア：メッセージ欄 */
+.msg_area {
+    height: calc(100% - (48px + var(--space-m) + var(--space-xl)));
+    width: 100%;
+    margin: var(--space-l) auto var(--space-s);
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: var(--space-m);
+}
+.msg_area .msg {
+    background-color: var(--color-neutral-5);
+    padding: var(--space-s);
+    border-radius: var(--border-radius-s);
+    border: solid rgba(222, 226, 230, 0.5) 1px;
+    color: var(--color-neutral-0);
+    width: 75%;
+    margin-bottom: var(--space-s);
+}
+.msg_area .msg.user_msg {
+    background-color: var(--color-orange-dark);
+}
+.msg_area .msg.msg_right {
+    margin-left: auto;
+}
+
+/* チャットエリア：ライト */
+.chat_area.light {
+    background-color: var(--color-indigo-lightest);
+}
+.chat_area.light input{
+    background-color: var(--color-neutral-0) !important;
+}
+.chat_area.light .msg{
+    background-color: #e1e1f4;
+    color: var(--color-neutral-6);
+}
+.chat_area.light .msg.user_msg {
+    background-color: #a0a0e5;
+    color: var(--color-neutral-0);
+}
+.chat_area.light .cleanBtn {
+    background-color: #a0a0e5 !important;
+}
